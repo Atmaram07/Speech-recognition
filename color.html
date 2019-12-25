@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      VOICE SEARCH
+    </title>
+    <style>
+    html, body {
+      padding: 0;
+      margin: 10px;
+      font-family: arial, sans-serif;
+    }
+    #color-back {
+      background: #fafafa;
+      border: 2px solid #000;
+      height: 300px;
+      transition: all 1s;
+    }
+    </style>
+    <script src="color.js"></script>
+  </head>
+  <body>
+    <center>
+    <div id="voice-cmd">
+      <input type="button" id="voice-on" disabled value="Speak" onclick="speech.start()"/>
+      <input type="button" id="voice-off" disabled value="Cancel" onclick="speech.stop()"/>
+      <p>
+        Press "speak" and say a color - The list of accepted colors are defined in speech.colors
+      </p>
+    </div>
+    </center>
+    <div id="color-back"></div>
+  </body>
+</html>
